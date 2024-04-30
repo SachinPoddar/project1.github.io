@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <style>
+        body{
+            background-image: url(images/backg.png);
+        }
+       
+    </style>
+    
+</head>
+<body style=" width: 30%; background-color: bisque;">
+
+    <form action=""style="border: 2px solid black; border-radius: 10px">
+    <p style="color: brown; font-weight: 900;">Personal_details</p>
+    <label for="f" style="font-weight: 900;">First_Name <span style="color: red;">*</span></label><br>
+    <input type="text" id="f" required placeholder="First_Name"style="width: 98%;">
+    <br><br>
+    <label for="l"style="font-weight: 900;">Last_Name<span style="color: red;">*</span></label><br>
+    <input type="text" id="l" required placeholder="Last_Name"style="width: 98%;">
+    <br><br>
+    <label for="dob"style="font-weight: 900;">DOB<span style="color: red;">*</span></label><br>
+    <input type="date"  id="dob" required placeholder="dd/mm/yyyy"style="width: 98%;">
+    <br><br>
+    <label for="em"style="font-weight: 900;">Email<span style="color: red;">*</span></label><br>
+    <input type="email"  id="em" required placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" style="width: 98%;">
+    <br><br>
+
+</form ><br>
+
+    <form action="" style="border: 2px solid black; border-radius: 10px;" >
+    <p style="color: brown; font-weight: 900;">Education_details</p>
+    <label for="dep"style="font-weight: 900;" aria-required="true">Department<span style="color: red;">*</span></label><br>
+     
+    <input type="radio" name="dep" id="cs">
+    <label for="cs">CS</label>
+    <input type="radio" name="dep" id="ec">
+    <label for="ec">EC</label>
+    <input type="radio" name="dep" id="me">
+    <label for="me">Mech</label>
+    <input type="radio" name="dep" id="cv"">
+    <label for="cv">Civil</label>
+
+    <br><br>
+
+    <label for="" style="font-weight: 900;">Year of Graduation<span style="color: red;">*</span></label>
+    <input list="yop"style="background-color: aquamarine;">
+    <datalist id="yop" >
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+
+    </datalist>
+<br><br>
+    
+</form>
+<br><br>
+<form action="Registration_sucessful.html" >
+<input type="submit" id="Submit" style="background-color: blue; text-align: center; width: 100%; border:5px thick black; border-radius: 5px ;">
+</form>
+<br>
+<form action="page_1.html" style="text-align: left; border: 5px thick black; border-radius: 20px" >
+    <input type="submit" value="Previous">
+</form>
+</body>
+
+</html>
